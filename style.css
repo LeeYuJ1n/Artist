@@ -129,6 +129,7 @@ header
   color: #555;
 }
 
+
 /* 푸터 */
 footer
 {
@@ -179,3 +180,79 @@ footer
     font-weight: bold;
   }
   
+/* 업데이트 로그 */
+body {
+  background: #f6f9fb;
+  font-family: 'Noto Sans KR', Arial, sans-serif;
+  color: #222;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* 카드 느낌의 리스트 테이블 */
+.update-list-section {
+  max-width: 900px;
+  margin: 40px auto 48px auto;
+  padding: 0 20px;
+}
+
+.update-list {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 18px; /* 행 사이 간격 */
+}
+
+.update-list th, .update-list td {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(44,62,80,0.03);
+  padding: 24px 20px;
+  vertical-align: top;
+}
+
+.update-list th {
+  color: #1565c0;
+  font-size: 1.15rem;
+  font-weight: bold;
+  border-bottom: none;
+  text-align: left;
+}
+
+.update-list td {
+  color: #555;
+  font-size: 1.04rem;
+  border-bottom: none;
+}
+
+.update-list .date {
+  color: #1976d2;
+  font-weight: bold;
+  width: 120px;
+  font-size: 1.06rem;
+}
+
+.update-list .title {
+  color: #1565c0;
+  font-weight: bold;
+  width: 220px;
+  font-size: 1.09rem;
+}
+
+.update-list .desc {
+  color: #444;
+  font-size: 1.03rem;
+  line-height: 1.7;
+}
+
+@media (max-width: 700px) {
+  .update-list th, .update-list td {
+    padding: 14px 8px;
+    font-size: 0.95rem;
+  }
+  .update-list-section {
+    padding: 0 2px;
+  }
+  .update-list .date, .update-list .title {
+    width: auto;
+  }
+}
